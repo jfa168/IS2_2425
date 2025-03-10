@@ -3,6 +3,9 @@ package es.unican.is2.daoh2;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import es.unican.is2.common.Contribuyente;
+import es.unican.is2.common.DataAccessException;
+
 /**
  * Clase de utilidad que mapea filas de la base de datos a 
  * instancias de Contribuyente

@@ -8,4 +8,41 @@
   <artifactId>Main</artifactId>
   <name>ImpuestoCirculacionMain</name>
   <description>Clase principal (main), punto de entrada</description>
+  
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>es.unican.is2</groupId>
+  		<artifactId>Common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>es.unican.is2</groupId>
+  		<artifactId>Business</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>es.unican.is2</groupId>
+  		<artifactId>GUI</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	
+  	
+  	<dependency>
+  		<groupId>es.unican.is2</groupId>
+  		<artifactId>DAOH2</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	  	
+  	
+  	
+  </dependencies>
+  
+  
+  
+  
+  
+  
 </project>

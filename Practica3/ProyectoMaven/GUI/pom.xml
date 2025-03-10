@@ -8,4 +8,15 @@
   <artifactId>GUI</artifactId>
   <name>ImpuestoCirculacionGUI</name>
   <description>Interfaz gráfica de usuario</description>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>es.unican.is2</groupId>
+  		<artifactId>Common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  
+  
 </project>

@@ -8,4 +8,15 @@
   <artifactId>Business</artifactId>
   <name>ImpuestoCirculacionBusiness</name>
   <description>Lógica de negocio (gestión de impuestos)</description>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>es.unican.is2</groupId>
+  		<artifactId>Common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  
+  
 </project>

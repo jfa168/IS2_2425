@@ -7,6 +7,10 @@ import java.sql.Statement;
 import java.util.LinkedList;
 import java.util.List;
 
+import es.unican.is2.common.Contribuyente;
+import es.unican.is2.common.DataAccessException;
+import es.unican.is2.common.IContribuyentesDAO;
+
 /**
  * Clase que implementa la capa DAO de acceso a contribuyentes.
  * Utiliza almacenamiento en base de datos H2 en memoria.

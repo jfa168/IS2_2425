@@ -1,10 +1,10 @@
 package es.unican.is2.main;
 
 import es.unican.is2.business.GestionImpuestoCirculacion;
+
 import es.unican.is2.daoh2.ContribuyentesDAO;
 import es.unican.is2.daoh2.VehiculosDAO;
 import es.unican.is2.gui.VistaFuncionario;
-
 
 
 /**
@@ -18,7 +18,7 @@ public class Runner {
 		VehiculosDAO vehiculosDAO = new VehiculosDAO();
 		
 		// Componentes capa negocio
-		GestionImpuestoCirculacion negocio = new GestionImpuestoCirculacion(contribuyentesDAO, vehiculosDAO);
+		GestionImpuestoCirculacion negocio = new GestionImpuestoCirculacion(vehiculosDAO, contribuyentesDAO);
 		
 		// Componentes casa presentacion
 		VistaFuncionario vista = new VistaFuncionario(negocio);
@@ -28,3 +28,4 @@ public class Runner {
 	}
 
 }
+

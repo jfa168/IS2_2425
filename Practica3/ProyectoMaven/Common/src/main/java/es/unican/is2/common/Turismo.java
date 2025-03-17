@@ -3,28 +3,49 @@ package es.unican.is2.common;
 import java.time.LocalDate;
 
 /**
- * Clase que representa un vehiculo de tipo turismo.
+ * Clase que representa un vehículo de tipo turismo.
  */
 public class Turismo extends Vehiculo {
 
-	private double potencia;
-	
-	public Turismo(long id, String matricula, LocalDate fechaMatriculacion, TipoMotor motor, double potencia) {
-		super(id, matricula, fechaMatriculacion, motor);
-		//TODO
-	}
+    private double potencia;
 
-	/**
-	 * Retorna la potencia en caballos fiscales del vehiculo.
-	 */
-	public double getPotencia() {
-		return potencia;
-	}
+    /**
+     * Constructor de la clase Turismo.
+     * 
+     * @param id ID único del vehículo.
+     * @param matricula Matrícula del turismo.
+     * @param fechaMatriculacion Fecha de matriculación del turismo.
+     * @param motor Tipo de motor del turismo.
+     * @param potencia Potencia del motor en caballos fiscales.
+     */
+    public Turismo(long id, String matricula, LocalDate fechaMatriculacion, TipoMotor motor, double potencia) {
+        super(id, matricula, fechaMatriculacion, motor);
+        this.potencia = potencia;
+    }
 
-	@Override
-	public double precioImpuesto() {
-		//TODO
-		return 0;
-	}
+    /**
+     * Retorna la potencia en caballos fiscales del vehículo.
+     */
+    public double getPotencia() {
+        return potencia;
+    }
 
+    /**
+     * Calcula el precio del impuesto de circulación según la potencia fiscal.
+     * @return Valor del impuesto a pagar.
+     */
+    @Override
+    public double precioImpuesto() {
+        if (potencia < 8) {
+            return 25.24;
+        } else if (potencia < 12) {
+            return 68.16;
+        } else if (potencia < 16) {
+            return 143.88;
+        } else if (potencia < 20) {
+            return 179.22;
+        } else {
+            return 224.00;
+        }
+    }
 }

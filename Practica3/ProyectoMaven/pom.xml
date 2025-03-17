@@ -35,12 +35,7 @@
     </build>
 </project>
   
-  
-  
-  
-  
-  
-  <modules>    
+<modules>    
     <module>Common</module>
     <module>Business</module>
     <module>Main</module>

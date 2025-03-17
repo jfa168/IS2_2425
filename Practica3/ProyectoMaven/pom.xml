@@ -6,6 +6,16 @@
   <packaging>pom</packaging>
   
   
+  
+  <modules>
+<module>Common</module>
+    <module>Business</module>
+    <module>Main</module>
+    <module>DAOH2</module>
+    <module>GUI</module>
+  </modules>
+  
+  
   <build>
         <plugins>
             <plugin>
@@ -35,13 +45,3 @@
     </build>
 </project>
   
-<modules>    
-    <module>Common</module>
-    <module>Business</module>
-    <module>Main</module>
-    <module>DAOH2</module>
-    <module>GUI</module>
-  </modules>
-  
-  
-</project>

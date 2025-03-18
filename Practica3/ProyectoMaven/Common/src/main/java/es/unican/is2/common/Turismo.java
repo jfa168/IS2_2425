@@ -37,15 +37,15 @@ public class Turismo extends Vehiculo {
     @Override
     public double precioImpuesto() {
         if (potencia < 8) {
-            return 25.24;
+            return 25;
         } else if (potencia < 12) {
-            return 68.16;
+            return 67;
         } else if (potencia < 16) {
-            return 143.88;
+            return 143;
         } else if (potencia < 20) {
-            return 179.22;
+            return 178;
         } else {
-            return 224.00;
+            return 223;
         }
     }
 }
